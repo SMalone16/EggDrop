@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explain | Egg Drop Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1 class="site-title">Explain</h1>
+        <p class="hero-tagline">Engineers share stories of their designs. Reflect, present, and celebrate what you discovered.</p>
+      </div>
+      <div class="wheel-nav-wrapper" aria-labelledby="process-wheel-label">
+        <button class="wheel-toggle" aria-expanded="true" aria-controls="wheelNav">
+          <span aria-hidden="true">🧭</span>
+          Design Wheel
+        </button>
+        <nav id="wheelNav" class="wheel-nav" aria-label="Design process navigation">
+          <svg class="wheel-svg" viewBox="0 0 200 200" role="group" aria-labelledby="wheelNavTitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title id="wheelNavTitle">Engineering design process navigation</title>
+            <defs>
+              <linearGradient id="grad-ask" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#023047" />
+                <stop offset="100%" stop-color="#0466c8" />
+              </linearGradient>
+              <linearGradient id="grad-explore" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#219ebc" />
+                <stop offset="100%" stop-color="#00b4d8" />
+              </linearGradient>
+              <linearGradient id="grad-model" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffb703" />
+                <stop offset="100%" stop-color="#fb8500" />
+              </linearGradient>
+              <linearGradient id="grad-evaluate" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ef476f" />
+                <stop offset="100%" stop-color="#d43d6c" />
+              </linearGradient>
+              <linearGradient id="grad-explain" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8338ec" />
+                <stop offset="100%" stop-color="#3a0ca3" />
+              </linearGradient>
+              <linearGradient id="grad-home" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2a9d8f" />
+                <stop offset="100%" stop-color="#34a0a4" />
+              </linearGradient>
+            </defs>
+            <g stroke="#ffffff" stroke-width="2">
+              <a xlink:href="ask.html" aria-label="Ask phase">
+                <path d="M100,100 L100,10 A90,90 0 0 1 177.9,55 L100,100 Z" fill="url(#grad-ask)" />
+                <text x="127.5" y="52" dominant-baseline="middle">Ask</text>
+              </a>
+              <a xlink:href="explore.html" aria-label="Explore phase">
+                <path d="M100,100 L177.9,55 A90,90 0 0 1 177.9,145 L100,100 Z" fill="url(#grad-explore)" />
+                <text x="155" y="100" dominant-baseline="middle">Explore</text>
+              </a>
+              <a xlink:href="model.html" aria-label="Model phase">
+                <path d="M100,100 L177.9,145 A90,90 0 0 1 100,190 L100,100 Z" fill="url(#grad-model)" />
+                <text x="127.5" y="148" dominant-baseline="middle">Model</text>
+              </a>
+              <a xlink:href="evaluate.html" aria-label="Evaluate phase">
+                <path d="M100,100 L100,190 A90,90 0 0 1 22.1,145 L100,100 Z" fill="url(#grad-evaluate)" />
+                <text x="72.5" y="148" dominant-baseline="middle">Evaluate</text>
+              </a>
+              <a xlink:href="explain.html" aria-label="Explain phase" aria-current="page">
+                <path d="M100,100 L22.1,145 A90,90 0 0 1 22.1,55 L100,100 Z" fill="url(#grad-explain)" />
+                <text x="45" y="100" dominant-baseline="middle">Explain</text>
+              </a>
+              <a xlink:href="index.html" aria-label="Challenge hub">
+                <path d="M100,100 L22.1,55 A90,90 0 0 1 100,10 L100,100 Z" fill="url(#grad-home)" />
+                <text x="72.5" y="52" dominant-baseline="middle">Hub</text>
+              </a>
+            </g>
+          </svg>
+          <div class="wheel-center">
+            <p id="process-wheel-label">Design Process Wheel</p>
+          </div>
+        </nav>
+        <p class="wheel-label">Explain your process and inspire others.</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="share-title">
+      <h2 id="share-title">Communicate Like an Engineer</h2>
+      <p class="section-intro">Use media, data, and reflection to show how your team solved the Egg Drop Challenge.</p>
+      <div class="grid-two">
+        <div>
+          <h3>Video Story Prompts</h3>
+          <ul class="checklist">
+            <li>Introduce your team and show the final model close up.</li>
+            <li>Explain how each part protects the egg using science words.</li>
+            <li>Show a clip of your best test and describe what the data means.</li>
+            <li>Share how you improved the design between trials.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>iPad Recording Tips</h3>
+          <ul class="checklist">
+            <li>Use landscape mode and steady hands or a tripod.</li>
+            <li>Check audio levels and speak clearly toward the microphone.</li>
+            <li>Enable captions or add text labels for key vocabulary.</li>
+            <li>Record in a quiet space to reduce background noise.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="reflection-title">
+      <h2 id="reflection-title">Reflect &amp; Celebrate</h2>
+      <div class="grid-two">
+        <div>
+          <h3>Reflection Questions</h3>
+          <ul class="checklist">
+            <li>Which design feature protected the egg the most?</li>
+            <li>What surprised you during testing?</li>
+            <li>How did your team share responsibilities?</li>
+            <li>What would you change for a higher drop?</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data Sharing Templates</h3>
+          <ul class="checklist">
+            <li>Create a slide with a before/after comparison photo.</li>
+            <li>Include a bar chart showing each trial’s result.</li>
+            <li>Use color-coded arrows to highlight impact points.</li>
+            <li>Add a quote from a teammate about teamwork.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="future-title">
+      <h2 id="future-title">Plan Your Next Iteration</h2>
+      <p class="section-intro">Engineers always look ahead. Use this organizer to plan future improvements.</p>
+      <table class="table" aria-describedby="future-title">
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col">What Happened?</th>
+            <th scope="col">Next Adjustment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cushioning</td>
+            <td>Example: cotton stayed in place but compressed fully.</td>
+            <td>Add layered cotton with foam corners.</td>
+          </tr>
+          <tr>
+            <td>Structure</td>
+            <td>Example: straw frame bent on impact.</td>
+            <td>Add cross-braces or switch to craft sticks.</td>
+          </tr>
+          <tr>
+            <td>Drag System</td>
+            <td>Example: parachute twisted during fall.</td>
+            <td>Widen strings to avoid tangles and add stabilizer fins.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="notice" role="complementary">Finish by thanking your test audience and inviting questions.</div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Egg Drop Challenge • Dream, design, and drop with care.</p>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

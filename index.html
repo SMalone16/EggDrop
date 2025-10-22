@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Egg Drop Challenge | Design Process</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1 class="site-title">Egg Drop Challenge</h1>
+        <p class="hero-tagline">Embark on a design adventure where every experiment, observation, and iteration brings you closer to a safe landing. Follow the engineering design process to protect your eggstronaut!</p>
+      </div>
+      <div class="wheel-nav-wrapper" aria-labelledby="process-wheel-label">
+        <button class="wheel-toggle" aria-expanded="true" aria-controls="wheelNav">
+          <span aria-hidden="true">🧭</span>
+          Design Wheel
+        </button>
+        <nav id="wheelNav" class="wheel-nav" aria-label="Design process navigation">
+          <svg class="wheel-svg" viewBox="0 0 200 200" role="group" aria-labelledby="wheelNavTitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title id="wheelNavTitle">Engineering design process navigation</title>
+            <defs>
+              <linearGradient id="grad-ask" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#023047" />
+                <stop offset="100%" stop-color="#0466c8" />
+              </linearGradient>
+              <linearGradient id="grad-explore" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#219ebc" />
+                <stop offset="100%" stop-color="#00b4d8" />
+              </linearGradient>
+              <linearGradient id="grad-model" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffb703" />
+                <stop offset="100%" stop-color="#fb8500" />
+              </linearGradient>
+              <linearGradient id="grad-evaluate" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ef476f" />
+                <stop offset="100%" stop-color="#d43d6c" />
+              </linearGradient>
+              <linearGradient id="grad-explain" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8338ec" />
+                <stop offset="100%" stop-color="#3a0ca3" />
+              </linearGradient>
+              <linearGradient id="grad-home" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2a9d8f" />
+                <stop offset="100%" stop-color="#34a0a4" />
+              </linearGradient>
+            </defs>
+            <g stroke="#ffffff" stroke-width="2">
+              <a xlink:href="ask.html" aria-label="Ask phase">
+                <path d="M100,100 L100,10 A90,90 0 0 1 177.9,55 L100,100 Z" fill="url(#grad-ask)" />
+                <text x="127.5" y="52" dominant-baseline="middle">Ask</text>
+              </a>
+              <a xlink:href="explore.html" aria-label="Explore phase">
+                <path d="M100,100 L177.9,55 A90,90 0 0 1 177.9,145 L100,100 Z" fill="url(#grad-explore)" />
+                <text x="155" y="100" dominant-baseline="middle">Explore</text>
+              </a>
+              <a xlink:href="model.html" aria-label="Model phase">
+                <path d="M100,100 L177.9,145 A90,90 0 0 1 100,190 L100,100 Z" fill="url(#grad-model)" />
+                <text x="127.5" y="148" dominant-baseline="middle">Model</text>
+              </a>
+              <a xlink:href="evaluate.html" aria-label="Evaluate phase">
+                <path d="M100,100 L100,190 A90,90 0 0 1 22.1,145 L100,100 Z" fill="url(#grad-evaluate)" />
+                <text x="72.5" y="148" dominant-baseline="middle">Evaluate</text>
+              </a>
+              <a xlink:href="explain.html" aria-label="Explain phase">
+                <path d="M100,100 L22.1,145 A90,90 0 0 1 22.1,55 L100,100 Z" fill="url(#grad-explain)" />
+                <text x="45" y="100" dominant-baseline="middle">Explain</text>
+              </a>
+              <a xlink:href="index.html" aria-label="Challenge hub" aria-current="page">
+                <path d="M100,100 L22.1,55 A90,90 0 0 1 100,10 L100,100 Z" fill="url(#grad-home)" />
+                <text x="72.5" y="52" dominant-baseline="middle">Hub</text>
+              </a>
+            </g>
+          </svg>
+          <div class="wheel-center">
+            <p id="process-wheel-label">Design Process Wheel</p>
+          </div>
+        </nav>
+        <p class="wheel-label">Click a phase to jump into that part of the challenge.</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">Welcome to the Egg Drop Mission</h2>
+      <p class="section-intro">You are the engineer in charge. Your team must invent a device that protects a raw egg during a drop. Use each phase of the engineering design process to ask bold questions, explore ideas, model prototypes, evaluate results, and explain discoveries.</p>
+      <div class="grid-two">
+        <div>
+          <h3>How to Use This Guide</h3>
+          <ul class="checklist">
+            <li>Start with the <strong>Ask</strong> phase to spark your curiosity.</li>
+            <li>Gather background knowledge and inspiration in <strong>Explore</strong>.</li>
+            <li>Sketch, build, and refine in <strong>Model</strong>.</li>
+            <li>Test like scientists in <strong>Evaluate</strong>.</li>
+            <li>Share your learning story in <strong>Explain</strong>.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Design Promises</h3>
+          <p>Engineers work with empathy, creativity, and evidence. As you design, remember to:</p>
+          <ul class="checklist">
+            <li>Respect teammates and listen deeply.</li>
+            <li>Record every idea and test result.</li>
+            <li>Iterate quickly and celebrate small wins.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="timeline-title">
+      <h2 id="timeline-title">Mission Timeline</h2>
+      <p class="section-intro">Plan your studio time with intentional checkpoints.</p>
+      <ol class="steps">
+        <li>Wonder &amp; define the challenge.</li>
+        <li>Research forces, materials, and inspiring designs.</li>
+        <li>Sketch prototypes and build a first model.</li>
+        <li>Run a sequence of chair-height drop tests.</li>
+        <li>Capture results, revise, and prepare to explain.</li>
+      </ol>
+      <div class="notice" role="status">Tip: Keep the design wheel open on your tablet during work sessions so you always know the next move.</div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Egg Drop Challenge • Dream, design, and drop with care.</p>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

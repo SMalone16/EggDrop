@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore | Egg Drop Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1 class="site-title">Explore</h1>
+        <p class="hero-tagline">Research like a physicist. Learn how forces, motion, and clever materials keep fragile cargo safe.</p>
+      </div>
+      <div class="wheel-nav-wrapper" aria-labelledby="process-wheel-label">
+        <button class="wheel-toggle" aria-expanded="true" aria-controls="wheelNav">
+          <span aria-hidden="true">🧭</span>
+          Design Wheel
+        </button>
+        <nav id="wheelNav" class="wheel-nav" aria-label="Design process navigation">
+          <svg class="wheel-svg" viewBox="0 0 200 200" role="group" aria-labelledby="wheelNavTitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title id="wheelNavTitle">Engineering design process navigation</title>
+            <defs>
+              <linearGradient id="grad-ask" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#023047" />
+                <stop offset="100%" stop-color="#0466c8" />
+              </linearGradient>
+              <linearGradient id="grad-explore" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#219ebc" />
+                <stop offset="100%" stop-color="#00b4d8" />
+              </linearGradient>
+              <linearGradient id="grad-model" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffb703" />
+                <stop offset="100%" stop-color="#fb8500" />
+              </linearGradient>
+              <linearGradient id="grad-evaluate" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ef476f" />
+                <stop offset="100%" stop-color="#d43d6c" />
+              </linearGradient>
+              <linearGradient id="grad-explain" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8338ec" />
+                <stop offset="100%" stop-color="#3a0ca3" />
+              </linearGradient>
+              <linearGradient id="grad-home" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2a9d8f" />
+                <stop offset="100%" stop-color="#34a0a4" />
+              </linearGradient>
+            </defs>
+            <g stroke="#ffffff" stroke-width="2">
+              <a xlink:href="ask.html" aria-label="Ask phase">
+                <path d="M100,100 L100,10 A90,90 0 0 1 177.9,55 L100,100 Z" fill="url(#grad-ask)" />
+                <text x="127.5" y="52" dominant-baseline="middle">Ask</text>
+              </a>
+              <a xlink:href="explore.html" aria-label="Explore phase" aria-current="page">
+                <path d="M100,100 L177.9,55 A90,90 0 0 1 177.9,145 L100,100 Z" fill="url(#grad-explore)" />
+                <text x="155" y="100" dominant-baseline="middle">Explore</text>
+              </a>
+              <a xlink:href="model.html" aria-label="Model phase">
+                <path d="M100,100 L177.9,145 A90,90 0 0 1 100,190 L100,100 Z" fill="url(#grad-model)" />
+                <text x="127.5" y="148" dominant-baseline="middle">Model</text>
+              </a>
+              <a xlink:href="evaluate.html" aria-label="Evaluate phase">
+                <path d="M100,100 L100,190 A90,90 0 0 1 22.1,145 L100,100 Z" fill="url(#grad-evaluate)" />
+                <text x="72.5" y="148" dominant-baseline="middle">Evaluate</text>
+              </a>
+              <a xlink:href="explain.html" aria-label="Explain phase">
+                <path d="M100,100 L22.1,145 A90,90 0 0 1 22.1,55 L100,100 Z" fill="url(#grad-explain)" />
+                <text x="45" y="100" dominant-baseline="middle">Explain</text>
+              </a>
+              <a xlink:href="index.html" aria-label="Challenge hub">
+                <path d="M100,100 L22.1,55 A90,90 0 0 1 100,10 L100,100 Z" fill="url(#grad-home)" />
+                <text x="72.5" y="52" dominant-baseline="middle">Hub</text>
+              </a>
+            </g>
+          </svg>
+          <div class="wheel-center">
+            <p id="process-wheel-label">Design Process Wheel</p>
+          </div>
+        </nav>
+        <p class="wheel-label">Use the wheel to jump to any phase when you are ready.</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="concepts-title">
+      <h2 id="concepts-title">Key Concepts for Egg Drop Engineers</h2>
+      <div class="grid-two">
+        <div>
+          <h3>Physics Focus</h3>
+          <ul class="checklist">
+            <li><strong>Gravity</strong> pulls the egg downward and gives it speed.</li>
+            <li><strong>Air resistance</strong> pushes up on wide, light designs to slow the fall.</li>
+            <li><strong>Impact force</strong> is the sudden push when the egg meets the ground.</li>
+            <li><strong>Energy transfer</strong> moves kinetic energy into cushions, crumple zones, or springs.</li>
+            <li><strong>Momentum</strong> tells us heavier objects take longer to stop, so we need gradual slowing.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Engineering Moves</h3>
+          <ul class="checklist">
+            <li>Create <em>crumple zones</em> that squish and absorb energy.</li>
+            <li>Use <em>suspension systems</em> (rubber bands, straws) to hold the egg away from outer walls.</li>
+            <li>Balance mass and drag for a gentle landing.</li>
+            <li>Prototype quickly and take notes on what works.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="video-title">
+      <h2 id="video-title">Watch &amp; Wonder</h2>
+      <p class="section-intro">Use these videos to see real egg drop strategies and the science behind them.</p>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/IXkzjxFJ4iY" title="Egg Drop Engineering Design Challenge" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/JI2oU1JzQJE" title="Crash Science for Kids" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/syEdvA8ngA8" title="Physics Girl: Cushioning an Egg" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section aria-labelledby="criteria-title">
+      <h2 id="criteria-title">Challenge Guidelines</h2>
+      <div class="card-grid">
+        <article class="card" aria-labelledby="criteria-list-title">
+          <h3 id="criteria-list-title">Criteria for Success</h3>
+          <ul class="checklist">
+            <li>The egg shell stays uncracked after the final drop.</li>
+            <li>The device uses no more than 25 Launch Bucks in materials.</li>
+            <li>The design lands within the marked drop zone.</li>
+            <li>The team can explain how physics informed their choices.</li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="rules-title">
+          <h3 id="rules-title">Rules to Follow</h3>
+          <ul class="checklist">
+            <li>Devices must be built during class time using approved supplies.</li>
+            <li>No parachutes wider than 40 centimeters.</li>
+            <li>Eggs remain in their protective cases between trials.</li>
+            <li>Clean up all materials and reset the drop zone after each test.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="supplies-title">
+      <h2 id="supplies-title">Supply Market</h2>
+      <p class="section-intro">Spend Launch Bucks wisely to get the features you need. Combine soft cushioning, sturdy frames, and drag-producing elements.</p>
+      <table class="table" aria-describedby="supplies-title">
+        <thead>
+          <tr>
+            <th scope="col">Material</th>
+            <th scope="col">Description</th>
+            <th scope="col">Launch Bucks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Bubble wrap (30 cm square)</th>
+            <td>Flexible cushioning sheet</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th scope="row">Paper straws (bundle of 6)</th>
+            <td>Lightweight frame pieces</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th scope="row">Masking tape (30 cm)</th>
+            <td>Connects materials without adding much weight</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">Rubber bands (set of 4)</th>
+            <td>Creates suspension and energy absorption</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">Coffee filters (pair)</th>
+            <td>Adds drag and slows the fall</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">Craft sticks (bundle of 5)</th>
+            <td>Provides rigid supports</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">Cotton balls (cup)</th>
+            <td>Soft padding to cradle the egg</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th scope="row">Paper cup</th>
+            <td>Inner shell to hold the egg</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">Parachute fabric square</th>
+            <td>Light ripstop cloth for advanced drag control</td>
+            <td>7</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section aria-labelledby="resources-title">
+      <h2 id="resources-title">Dig Deeper</h2>
+      <div class="card-grid">
+        <article class="card" aria-labelledby="student-resources-title">
+          <h3 id="student-resources-title">Kid-Friendly Reads &amp; Tools</h3>
+          <ul class="resource-list">
+            <li><a href="https://www.sciencebuddies.org/science-fair-projects/project-ideas/Phys_p046/physics/egg-drop" target="_blank" rel="noopener">Science Buddies: Egg Drop Project Guide</a></li>
+            <li><a href="https://www.nationalgeographic.org/activity/egg-drop" target="_blank" rel="noopener">National Geographic Kids: Egg Drop Activity</a></li>
+            <li><a href="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html" target="_blank" rel="noopener">PhET Simulation: Forces &amp; Motion Basics</a></li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="advanced-resources-title">
+          <h3 id="advanced-resources-title">Advanced Inspiration</h3>
+          <ul class="resource-list">
+            <li><a href="https://ntrs.nasa.gov/api/citations/20160004388/downloads/20160004388.pdf" target="_blank" rel="noopener">NASA Engineering Design Process Guide</a></li>
+            <li><a href="https://engagedscholarship.csuohio.edu/cgi/viewcontent.cgi?article=1770&context=etdarchive" target="_blank" rel="noopener">Cleveland State University Thesis on Impact Energy Absorption</a></li>
+            <li><a href="https://www.aps.org/publications/apsnews/201709/physicshighway.cfm" target="_blank" rel="noopener">American Physical Society: Crash Energy Management</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Egg Drop Challenge • Dream, design, and drop with care.</p>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

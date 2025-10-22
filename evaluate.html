@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluate | Egg Drop Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1 class="site-title">Evaluate</h1>
+        <p class="hero-tagline">Test with purpose. Gather data, observe like engineers, and plan improvements.</p>
+      </div>
+      <div class="wheel-nav-wrapper" aria-labelledby="process-wheel-label">
+        <button class="wheel-toggle" aria-expanded="true" aria-controls="wheelNav">
+          <span aria-hidden="true">🧭</span>
+          Design Wheel
+        </button>
+        <nav id="wheelNav" class="wheel-nav" aria-label="Design process navigation">
+          <svg class="wheel-svg" viewBox="0 0 200 200" role="group" aria-labelledby="wheelNavTitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title id="wheelNavTitle">Engineering design process navigation</title>
+            <defs>
+              <linearGradient id="grad-ask" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#023047" />
+                <stop offset="100%" stop-color="#0466c8" />
+              </linearGradient>
+              <linearGradient id="grad-explore" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#219ebc" />
+                <stop offset="100%" stop-color="#00b4d8" />
+              </linearGradient>
+              <linearGradient id="grad-model" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffb703" />
+                <stop offset="100%" stop-color="#fb8500" />
+              </linearGradient>
+              <linearGradient id="grad-evaluate" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ef476f" />
+                <stop offset="100%" stop-color="#d43d6c" />
+              </linearGradient>
+              <linearGradient id="grad-explain" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8338ec" />
+                <stop offset="100%" stop-color="#3a0ca3" />
+              </linearGradient>
+              <linearGradient id="grad-home" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2a9d8f" />
+                <stop offset="100%" stop-color="#34a0a4" />
+              </linearGradient>
+            </defs>
+            <g stroke="#ffffff" stroke-width="2">
+              <a xlink:href="ask.html" aria-label="Ask phase">
+                <path d="M100,100 L100,10 A90,90 0 0 1 177.9,55 L100,100 Z" fill="url(#grad-ask)" />
+                <text x="127.5" y="52" dominant-baseline="middle">Ask</text>
+              </a>
+              <a xlink:href="explore.html" aria-label="Explore phase">
+                <path d="M100,100 L177.9,55 A90,90 0 0 1 177.9,145 L100,100 Z" fill="url(#grad-explore)" />
+                <text x="155" y="100" dominant-baseline="middle">Explore</text>
+              </a>
+              <a xlink:href="model.html" aria-label="Model phase">
+                <path d="M100,100 L177.9,145 A90,90 0 0 1 100,190 L100,100 Z" fill="url(#grad-model)" />
+                <text x="127.5" y="148" dominant-baseline="middle">Model</text>
+              </a>
+              <a xlink:href="evaluate.html" aria-label="Evaluate phase" aria-current="page">
+                <path d="M100,100 L100,190 A90,90 0 0 1 22.1,145 L100,100 Z" fill="url(#grad-evaluate)" />
+                <text x="72.5" y="148" dominant-baseline="middle">Evaluate</text>
+              </a>
+              <a xlink:href="explain.html" aria-label="Explain phase">
+                <path d="M100,100 L22.1,145 A90,90 0 0 1 22.1,55 L100,100 Z" fill="url(#grad-explain)" />
+                <text x="45" y="100" dominant-baseline="middle">Explain</text>
+              </a>
+              <a xlink:href="index.html" aria-label="Challenge hub">
+                <path d="M100,100 L22.1,55 A90,90 0 0 1 100,10 L100,100 Z" fill="url(#grad-home)" />
+                <text x="72.5" y="52" dominant-baseline="middle">Hub</text>
+              </a>
+            </g>
+          </svg>
+          <div class="wheel-center">
+            <p id="process-wheel-label">Design Process Wheel</p>
+          </div>
+        </nav>
+        <p class="wheel-label">Stay curious as you test and record evidence.</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="testing-title">
+      <h2 id="testing-title">Test Protocol</h2>
+      <p class="section-intro">Follow this plan so every team collects reliable data.</p>
+      <ol class="steps">
+        <li>Inspect your model for loose parts before testing.</li>
+        <li>Load a plastic practice egg filled with pebbles to mimic the weight of a real egg.</li>
+        <li>Hold the device at chair height (about 45 cm) and keep arms straight out.</li>
+        <li>Count down 3-2-1 together before dropping for consistent timing.</li>
+        <li>Observe the landing area before touching the model and describe what you see.</li>
+      </ol>
+      <div class="notice" role="note">Switch to a real egg only after two successful practice drops.</div>
+    </section>
+    <section aria-labelledby="data-title">
+      <h2 id="data-title">Observe &amp; Collect Data</h2>
+      <div class="grid-two">
+        <div>
+          <h3>Engineer Observation Habits</h3>
+          <ul class="checklist">
+            <li>Watch how the device falls: straight, spinning, or wobbling.</li>
+            <li>Note sounds at impact—quiet landings often mean softer forces.</li>
+            <li>Feel the egg gently after each drop to check for hairline cracks.</li>
+            <li>Photograph each trial so you can compare positions and damage.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data Table Template</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Trial</th>
+                <th scope="col">Height</th>
+                <th scope="col">Result</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Chair height</td>
+                <td>Safe / Crack</td>
+                <td>Describe landing, cushioning, noises.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Chair height</td>
+                <td>Safe / Crack</td>
+                <td>List adjustments before trial.</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Standing height</td>
+                <td>Safe / Crack</td>
+                <td>Record ideas for next iteration.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="safety-title">
+      <h2 id="safety-title">Safety &amp; Team Roles</h2>
+      <div class="card-grid">
+        <article class="card" aria-labelledby="safety-reminders-title">
+          <h3 id="safety-reminders-title">Safety Reminders</h3>
+          <ul class="checklist">
+            <li>Wear safety glasses during all drop tests.</li>
+            <li>Keep the landing zone clear of hands, faces, and backpacks.</li>
+            <li>Use a broom and dustpan immediately if an egg breaks.</li>
+            <li>Wash hands after handling raw eggs.</li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="team-roles-title">
+          <h3 id="team-roles-title">Engineer Roles</h3>
+          <ul class="checklist">
+            <li><strong>Drop Technician</strong>: releases the device smoothly from the set height.</li>
+            <li><strong>Data Recorder</strong>: times drops, fills in the table, and notes observations.</li>
+            <li><strong>Safety Captain</strong>: checks glasses, clears the landing zone, and leads cleanup.</li>
+            <li><strong>Design Analyst</strong>: suggests quick adjustments between trials.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Egg Drop Challenge • Dream, design, and drop with care.</p>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
