@@ -446,7 +446,7 @@ blockquote {
     box-shadow: 0 8px 18px rgba(16, 52, 74, 0.15);
   }
 
-  .wheel-toggle[aria-expanded="false"] + .wheel-nav {
+  .wheel-nav.is-collapsed {
     display: none;
   }
 }
