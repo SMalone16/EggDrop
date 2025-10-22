@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model | Egg Drop Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1 class="site-title">Model</h1>
+        <p class="hero-tagline">Bring your ideas to life. Sketch, build, and refine like engineers do in the field.</p>
+      </div>
+      <div class="wheel-nav-wrapper" aria-labelledby="process-wheel-label">
+        <button class="wheel-toggle" aria-expanded="true" aria-controls="wheelNav">
+          <span aria-hidden="true">🧭</span>
+          Design Wheel
+        </button>
+        <nav id="wheelNav" class="wheel-nav" aria-label="Design process navigation">
+          <svg class="wheel-svg" viewBox="0 0 200 200" role="group" aria-labelledby="wheelNavTitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title id="wheelNavTitle">Engineering design process navigation</title>
+            <defs>
+              <linearGradient id="grad-ask" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#023047" />
+                <stop offset="100%" stop-color="#0466c8" />
+              </linearGradient>
+              <linearGradient id="grad-explore" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#219ebc" />
+                <stop offset="100%" stop-color="#00b4d8" />
+              </linearGradient>
+              <linearGradient id="grad-model" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffb703" />
+                <stop offset="100%" stop-color="#fb8500" />
+              </linearGradient>
+              <linearGradient id="grad-evaluate" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ef476f" />
+                <stop offset="100%" stop-color="#d43d6c" />
+              </linearGradient>
+              <linearGradient id="grad-explain" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8338ec" />
+                <stop offset="100%" stop-color="#3a0ca3" />
+              </linearGradient>
+              <linearGradient id="grad-home" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2a9d8f" />
+                <stop offset="100%" stop-color="#34a0a4" />
+              </linearGradient>
+            </defs>
+            <g stroke="#ffffff" stroke-width="2">
+              <a xlink:href="ask.html" aria-label="Ask phase">
+                <path d="M100,100 L100,10 A90,90 0 0 1 177.9,55 L100,100 Z" fill="url(#grad-ask)" />
+                <text x="127.5" y="52" dominant-baseline="middle">Ask</text>
+              </a>
+              <a xlink:href="explore.html" aria-label="Explore phase">
+                <path d="M100,100 L177.9,55 A90,90 0 0 1 177.9,145 L100,100 Z" fill="url(#grad-explore)" />
+                <text x="155" y="100" dominant-baseline="middle">Explore</text>
+              </a>
+              <a xlink:href="model.html" aria-label="Model phase" aria-current="page">
+                <path d="M100,100 L177.9,145 A90,90 0 0 1 100,190 L100,100 Z" fill="url(#grad-model)" />
+                <text x="127.5" y="148" dominant-baseline="middle">Model</text>
+              </a>
+              <a xlink:href="evaluate.html" aria-label="Evaluate phase">
+                <path d="M100,100 L100,190 A90,90 0 0 1 22.1,145 L100,100 Z" fill="url(#grad-evaluate)" />
+                <text x="72.5" y="148" dominant-baseline="middle">Evaluate</text>
+              </a>
+              <a xlink:href="explain.html" aria-label="Explain phase">
+                <path d="M100,100 L22.1,145 A90,90 0 0 1 22.1,55 L100,100 Z" fill="url(#grad-explain)" />
+                <text x="45" y="100" dominant-baseline="middle">Explain</text>
+              </a>
+              <a xlink:href="index.html" aria-label="Challenge hub">
+                <path d="M100,100 L22.1,55 A90,90 0 0 1 100,10 L100,100 Z" fill="url(#grad-home)" />
+                <text x="72.5" y="52" dominant-baseline="middle">Hub</text>
+              </a>
+            </g>
+          </svg>
+          <div class="wheel-center">
+            <p id="process-wheel-label">Design Process Wheel</p>
+          </div>
+        </nav>
+        <p class="wheel-label">Return to the wheel to navigate the process at any time.</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="prototype-title">
+      <h2 id="prototype-title">Prototype Like a Professional</h2>
+      <p class="section-intro">Follow these modeling moves inspired by aerospace and automotive engineers.</p>
+      <div class="grid-two">
+        <article class="card" aria-labelledby="sketching-title">
+          <h3 id="sketching-title">Sketch with Purpose</h3>
+          <ul class="checklist">
+            <li>Draw your design from at least two angles and label each part.</li>
+            <li>Use arrows to show where forces will travel through the structure.</li>
+            <li>Color-code cushioning, frame, and parachute elements.</li>
+          </ul>
+        </article>
+        <article class="card" aria-labelledby="materials-title">
+          <h3 id="materials-title">Plan Materials</h3>
+          <ul class="checklist">
+            <li>List the Launch Bucks cost beside each material.</li>
+            <li>Note which materials are reusable for second iterations.</li>
+            <li>Match each material to its job (cushion, slow, support, secure).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="build-title">
+      <h2 id="build-title">Build &amp; Iterate</h2>
+      <div class="grid-two">
+        <div>
+          <h3>Modeling Checklist</h3>
+          <ul class="checklist">
+            <li>Measure twice before cutting or taping materials.</li>
+            <li>Keep an organized workstation with labeled bins.</li>
+            <li>Construct in layers: frame first, cushioning second, exterior last.</li>
+            <li>Gently shake the model to check for rattles or weak joints.</li>
+            <li>Log each change in a design notebook or digital journal.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Engineering Practices</h3>
+          <ul class="checklist">
+            <li>Conduct quick <strong>bench tests</strong>: drop a marble or plastic egg to test cushioning.</li>
+            <li>Create a <strong>control drawing</strong> so revisions can be compared.</li>
+            <li>Use <strong>design sprints</strong>: focus on one improvement for 10 minutes, then review.</li>
+            <li>Hold a <strong>peer design review</strong> and invite feedback.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="focus-title">
+      <h2 id="focus-title">Focus on Critical Features</h2>
+      <div class="flex-columns">
+        <div class="card" aria-labelledby="cushioning-title">
+          <h3 id="cushioning-title">Cushioning Core</h3>
+          <p>Design an inner cradle that hugs the egg. Use soft materials that compress slowly, like cotton or foam. Add crossing strips of tape to hold the egg gently without squeezing.</p>
+        </div>
+        <div class="card" aria-labelledby="structure-title">
+          <h3 id="structure-title">Structure &amp; Frame</h3>
+          <p>Build triangles and cross-braces, just like engineers strengthen bridges. Make sure the egg is centered so the weight is balanced.</p>
+        </div>
+        <div class="card" aria-labelledby="drag-title">
+          <h3 id="drag-title">Drag Devices</h3>
+          <p>Increase surface area with parachutes, streamers, or wings. Smooth out wrinkles so air flows evenly and prevents spinning.</p>
+        </div>
+      </div>
+      <blockquote>
+        “Every prototype teaches us something. Record the lesson, adjust, and try again.”
+      </blockquote>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Egg Drop Challenge • Dream, design, and drop with care.</p>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

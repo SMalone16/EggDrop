@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask | Egg Drop Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1 class="site-title">Ask</h1>
+        <p class="hero-tagline">Great engineers start with great questions. Wonder boldly, look closely, and let curiosity lead your design journey.</p>
+      </div>
+      <div class="wheel-nav-wrapper" aria-labelledby="process-wheel-label">
+        <button class="wheel-toggle" aria-expanded="true" aria-controls="wheelNav">
+          <span aria-hidden="true">🧭</span>
+          Design Wheel
+        </button>
+        <nav id="wheelNav" class="wheel-nav" aria-label="Design process navigation">
+          <svg class="wheel-svg" viewBox="0 0 200 200" role="group" aria-labelledby="wheelNavTitle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title id="wheelNavTitle">Engineering design process navigation</title>
+            <defs>
+              <linearGradient id="grad-ask" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#023047" />
+                <stop offset="100%" stop-color="#0466c8" />
+              </linearGradient>
+              <linearGradient id="grad-explore" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#219ebc" />
+                <stop offset="100%" stop-color="#00b4d8" />
+              </linearGradient>
+              <linearGradient id="grad-model" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffb703" />
+                <stop offset="100%" stop-color="#fb8500" />
+              </linearGradient>
+              <linearGradient id="grad-evaluate" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ef476f" />
+                <stop offset="100%" stop-color="#d43d6c" />
+              </linearGradient>
+              <linearGradient id="grad-explain" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#8338ec" />
+                <stop offset="100%" stop-color="#3a0ca3" />
+              </linearGradient>
+              <linearGradient id="grad-home" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2a9d8f" />
+                <stop offset="100%" stop-color="#34a0a4" />
+              </linearGradient>
+            </defs>
+            <g stroke="#ffffff" stroke-width="2">
+              <a xlink:href="ask.html" aria-label="Ask phase" aria-current="page">
+                <path d="M100,100 L100,10 A90,90 0 0 1 177.9,55 L100,100 Z" fill="url(#grad-ask)" />
+                <text x="127.5" y="52" dominant-baseline="middle">Ask</text>
+              </a>
+              <a xlink:href="explore.html" aria-label="Explore phase">
+                <path d="M100,100 L177.9,55 A90,90 0 0 1 177.9,145 L100,100 Z" fill="url(#grad-explore)" />
+                <text x="155" y="100" dominant-baseline="middle">Explore</text>
+              </a>
+              <a xlink:href="model.html" aria-label="Model phase">
+                <path d="M100,100 L177.9,145 A90,90 0 0 1 100,190 L100,100 Z" fill="url(#grad-model)" />
+                <text x="127.5" y="148" dominant-baseline="middle">Model</text>
+              </a>
+              <a xlink:href="evaluate.html" aria-label="Evaluate phase">
+                <path d="M100,100 L100,190 A90,90 0 0 1 22.1,145 L100,100 Z" fill="url(#grad-evaluate)" />
+                <text x="72.5" y="148" dominant-baseline="middle">Evaluate</text>
+              </a>
+              <a xlink:href="explain.html" aria-label="Explain phase">
+                <path d="M100,100 L22.1,145 A90,90 0 0 1 22.1,55 L100,100 Z" fill="url(#grad-explain)" />
+                <text x="45" y="100" dominant-baseline="middle">Explain</text>
+              </a>
+              <a xlink:href="index.html" aria-label="Challenge hub">
+                <path d="M100,100 L22.1,55 A90,90 0 0 1 100,10 L100,100 Z" fill="url(#grad-home)" />
+                <text x="72.5" y="52" dominant-baseline="middle">Hub</text>
+              </a>
+            </g>
+          </svg>
+          <div class="wheel-center">
+            <p id="process-wheel-label">Design Process Wheel</p>
+          </div>
+        </nav>
+        <p class="wheel-label">Keep asking, exploring, modeling, evaluating, and explaining!</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="layout-grid">
+      <section aria-labelledby="ask-questions-title">
+        <h2 id="ask-questions-title">Focus Questions</h2>
+        <p class="section-intro">Use the question spotlight to slow down and think deeply. Discuss one prompt at a time with your team, then capture your ideas on sticky notes or in your notebook.</p>
+        <div data-question-cycle>
+          <p class="ask-question" id="askQuestion" aria-live="polite"></p>
+          <div class="ask-controls">
+            <button type="button" data-action="prev">Previous</button>
+            <button type="button" data-action="next">Next</button>
+          </div>
+          <p class="wheel-label" id="askCounter"></p>
+          <div class="sr-only" id="askQuestionList">
+            <span>How can we design a device that keeps our egg safe during a drop?</span>
+            <span>What forces will push or pull on our egg protector?</span>
+            <span>Which materials at school or home could cushion the egg the best?</span>
+            <span>How will gravity and air resistance work together during the fall?</span>
+            <span>Where do we predict the egg might crack first and why?</span>
+            <span>How can we test ideas safely before using a real egg?</span>
+            <span>What designs from nature inspire a protective shell?</span>
+            <span>What questions should we ask our classmates or teachers to learn more?</span>
+            <span>How will we know if our design is ready for the official launch?</span>
+            <span>What changes might we try after the first test to make it even better?</span>
+            <span>How will we explain our design choices to another engineering team?</span>
+            <span>What do we predict will happen in our post-test drop after making improvements?</span>
+          </div>
+        </div>
+      </section>
+      <aside aria-labelledby="ask-ideas-title">
+        <h2 id="ask-ideas-title">Questioning Tips</h2>
+        <p>Capture ideas with quick sketches and words. Revisit the wheel whenever you move to a new phase.</p>
+        <ul class="checklist">
+          <li>Use sentence starters like “What if…” and “How might…” to open new possibilities.</li>
+          <li>Sort questions into <span class="badge">Need to Know</span> and <span class="badge">Wonderings</span>.</li>
+          <li>Vote as a team for the top three questions to investigate today.</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Egg Drop Challenge • Dream, design, and drop with care.</p>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

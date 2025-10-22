@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Design Process Wheel</title>
+  <desc id="desc">Six slices representing the Ask, Explore, Model, Evaluate, Explain, and Challenge Hub phases.</desc>
+  <defs>
+    <linearGradient id="grad-ask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#023047" />
+      <stop offset="100%" stop-color="#0466c8" />
+    </linearGradient>
+    <linearGradient id="grad-explore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#219ebc" />
+      <stop offset="100%" stop-color="#00b4d8" />
+    </linearGradient>
+    <linearGradient id="grad-model" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb703" />
+      <stop offset="100%" stop-color="#fb8500" />
+    </linearGradient>
+    <linearGradient id="grad-evaluate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef476f" />
+      <stop offset="100%" stop-color="#d43d6c" />
+    </linearGradient>
+    <linearGradient id="grad-explain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8338ec" />
+      <stop offset="100%" stop-color="#3a0ca3" />
+    </linearGradient>
+    <linearGradient id="grad-home" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a9d8f" />
+      <stop offset="100%" stop-color="#34a0a4" />
+    </linearGradient>
+  </defs>
+  <g stroke="#ffffff" stroke-width="2">
+    <path id="slice-ask" d="M100,100 L100,10 A90,90 0 0 1 177.9,55 L100,100 Z" fill="url(#grad-ask)" />
+    <path id="slice-explore" d="M100,100 L177.9,55 A90,90 0 0 1 177.9,145 L100,100 Z" fill="url(#grad-explore)" />
+    <path id="slice-model" d="M100,100 L177.9,145 A90,90 0 0 1 100,190 L100,100 Z" fill="url(#grad-model)" />
+    <path id="slice-evaluate" d="M100,100 L100,190 A90,90 0 0 1 22.1,145 L100,100 Z" fill="url(#grad-evaluate)" />
+    <path id="slice-explain" d="M100,100 L22.1,145 A90,90 0 0 1 22.1,55 L100,100 Z" fill="url(#grad-explain)" />
+    <path id="slice-home" d="M100,100 L22.1,55 A90,90 0 0 1 100,10 L100,100 Z" fill="url(#grad-home)" />
+  </g>
+  <circle cx="100" cy="100" r="40" fill="#ffffff" stroke="#0f3a52" stroke-width="2" />
+  <g font-family="Poppins, Arial, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">
+    <text x="127.5" y="52" dominant-baseline="middle">Ask</text>
+    <text x="155" y="100" dominant-baseline="middle">Explore</text>
+    <text x="127.5" y="148" dominant-baseline="middle">Model</text>
+    <text x="72.5" y="148" dominant-baseline="middle">Evaluate</text>
+    <text x="45" y="100" dominant-baseline="middle">Explain</text>
+    <text x="72.5" y="52" dominant-baseline="middle">Hub</text>
+  </g>
+</svg>
