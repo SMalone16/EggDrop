@@ -141,8 +141,14 @@ footer p {
 
 .wheel-nav svg text {
   font-family: var(--font-heading);
-  font-size: clamp(0.7rem, 2vw, 0.95rem);
+  font-size: clamp(0.65rem, 1.8vw, 0.9rem);
   font-weight: 600;
+  text-anchor: middle;
+  fill: #fff;
+  letter-spacing: 0.03em;
+  paint-order: stroke fill;
+  stroke: rgba(16, 52, 74, 0.45);
+  stroke-width: 0.8px;
   pointer-events: none;
 }
 
